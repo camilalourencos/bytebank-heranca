@@ -3,11 +3,11 @@ public class Funcionario {
 	
 	private String nome;
 	private String cpf;
-	private double salario;
+	private double salario; //protected torna o atributo público para os filhos
 	
 	
 	public double getBonus() { //é possível criar getter/setter mesmo se o atributo não estiver declarado.
-		return this.salario*0.1;
+		return this.salario*0.5;
 	}
 	
 	public String getNome() {
