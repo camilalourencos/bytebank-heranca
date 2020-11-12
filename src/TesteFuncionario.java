@@ -3,7 +3,7 @@ public class TesteFuncionario {
 
 	public static void main(String[] args) {
 
-		Funcionario osorio = new Funcionario();
+		Funcionario osorio = new EditorDeVideo();
 		osorio.setNome("Osório");
 		osorio.setCpf("123.456.789-10");
 		osorio.setSalario(15000);
@@ -16,7 +16,7 @@ public class TesteFuncionario {
 		gerente.setNome("Pedro");
 		gerente.setSalario(500);
 
-		System.out.println("Pedro vai ganhar " + (gerente.getBonus() + gerente.getSalario()));
+		System.out.println("Pedro vai ganhar um bônus de " + gerente.getBonus());
 	}
 
 }

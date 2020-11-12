@@ -17,7 +17,7 @@ public class Gerente extends Funcionario{
 	}
 	
 	public double getBonus() { //é possível criar getter/setter mesmo se o atributo não estiver declarado.
-		return super.getBonus()+super.getSalario(); //super indica que o atributo está definido na classe base
+		return super.setBonus()+1000; //super indica que o atributo está definido na classe base
 	}
 	
 }	

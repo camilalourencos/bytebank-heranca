@@ -1,12 +1,14 @@
-
-public class Funcionario {
+// não é possível criar/instanciar objetos concretos a partir de classes abstratas
+public abstract class Funcionario {
 	
 	private String nome;
 	private String cpf;
 	private double salario; //protected torna o atributo público para os filhos
 	
-	
-	public double getBonus() { //é possível criar getter/setter mesmo se o atributo não estiver declarado.
+	//método sem corpo - não há implementação desse método aqui, apenas nos filhos
+	public abstract double getBonus(); //é possível criar getter/setter mesmo se o atributo não estiver declarado.
+
+	public double setBonus() {
 		return this.salario*0.5;
 	}
 	
