@@ -10,12 +10,13 @@ public class TesteFuncionario {
 
 		System.out.println(osorio.getNome() + " é muito lindo e merece ganhar " + osorio.getSalario() + " reais"
 				+ " e ainda um bônus de " + osorio.getBonus());
-		
-		Gerente gerente = new Gerente();
+
+		Funcionario gerente = new Gerente(); // é possível usar um tipo de referência mais genérica. Neste caso,
+												// "Funcionário" em vez de "Gerente"
 		gerente.setNome("Pedro");
 		gerente.setSalario(500);
-		
-		System.out.println("Pedro vai ganhar "+(gerente.getBonus()+gerente.getSalario()));
+
+		System.out.println("Pedro vai ganhar " + (gerente.getBonus() + gerente.getSalario()));
 	}
 
 }
