@@ -5,6 +5,7 @@ public abstract class Funcionario {
 	private String cpf;
 	private double salario; //protected torna o atributo público para os filhos
 	
+	
 	//método sem corpo - não há implementação desse método aqui, apenas nos filhos
 	public abstract double getBonus(); //é possível criar getter/setter mesmo se o atributo não estiver declarado.
 
@@ -32,4 +33,5 @@ public abstract class Funcionario {
 	}
 	
 
+	
 }
