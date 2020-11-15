@@ -7,20 +7,20 @@ public class Gerente extends Funcionario implements Autenticavel{
 		return super.setBonus()+1000; //super indica que o atributo está definido na classe base
 	}
 	
-    private int senha;
+    private AutenticacaoLogin login;
+
+    public Gerente() {
+        this.login = new AutenticacaoLogin();
+    }
 
     @Override
     public void setSenha(int senha) {
-        this.senha = senha;
+        this.login.setSenha(senha);
     }
 
     @Override
     public boolean autentica(int senha) {
-        if(this.senha == senha) {
-            return true;
-        } else {
-            return false;
-        }
+    	return this.login.autentica(senha);
     }
-	
+    
 }	
